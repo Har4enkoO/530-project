@@ -13,3 +13,7 @@
   display: inline-block;
   border: 3px solid black;
 }
+.galleryPhoto {
+  width: 200px;
+  height: 200px;
+}
