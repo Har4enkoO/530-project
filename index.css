@@ -1,19 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;700&display=swap');
+
+:root {
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+  max-width: 980px;
+  margin: auto;
+}
+.header {
+  margin-top: 10px;
+}
+.main-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.header-nav {
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+}
+
+.header-nav a {
+  display: block;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 0.9em;
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+}
+
+@media (min-width: 769px) {
+  .header-nav {
+    display: flex;
+  }
+}
+
+@media (min-width: 769px) {
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .thaiNature {
-  width: 900px;
-  border: 15px solid green;
+  width: 100%;
 }
+
 .myPhoto {
-  position: absolute;
-  top: 400px;
-  left: 250px;
+  max-width: 200px;
+  position: relative;
+  top: -12.5em;
+  left: 30%;
   border: 15px solid white;
-  width: 350px;
-}
-.numbers {
-  display: inline-block;
-  border: 3px solid black;
-}
-.galleryPhoto {
-  width: 200px;
-  height: 200px;
 }
